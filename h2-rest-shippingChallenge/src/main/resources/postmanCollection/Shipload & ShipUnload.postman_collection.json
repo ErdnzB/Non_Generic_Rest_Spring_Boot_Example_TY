@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "624a5273-3e2a-41af-9e0f-51792e9e3995",
+		"name": "Shipload & ShipUnload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/shipUnload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"plate\": \"34 TL 34\",\r\n  \"route\": [\r\n    {\r\n      \"deliveryPoint\": 1,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P7988000121\"},\r\n        {\"barcode\": \"P7988000122\"},\r\n        {\"barcode\": \"P7988000123\"},\r\n        {\"barcode\": \"P8988000121\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 2,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P8988000123\"},\r\n        {\"barcode\": \"P8988000124\"},\r\n        {\"barcode\": \"P8988000125\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 3,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P9988000126\"},\r\n        {\"barcode\": \"P9988000127\"},\r\n        {\"barcode\": \"P9988000128\"},\r\n        {\"barcode\": \"P9988000129\"},\r\n        {\"barcode\": \"P9988000130\"}\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/shipUnload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shipUnload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/shipLoad",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"plate\": \"34 TL 34\",\r\n  \"route\": [\r\n    {\r\n      \"deliveryPoint\": 1,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P7988000121\"},\r\n        {\"barcode\": \"P7988000122\"},\r\n        {\"barcode\": \"P7988000123\"},\r\n        {\"barcode\": \"P8988000121\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 2,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P8988000123\"},\r\n        {\"barcode\": \"P8988000124\"},\r\n        {\"barcode\": \"P8988000125\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 3,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P9988000126\"},\r\n        {\"barcode\": \"P9988000127\"},\r\n        {\"barcode\": \"P9988000128\"},\r\n        {\"barcode\": \"P9988000129\"},\r\n        {\"barcode\": \"P9988000130\"}\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/shipLoad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shipLoad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getAllPacks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"plate\": \"34 TL 34\",\r\n  \"route\": [\r\n    {\r\n      \"deliveryPoint\": 1,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P7988000121\"},\r\n        {\"barcode\": \"P7988000122\"},\r\n        {\"barcode\": \"P7988000123\"},\r\n        {\"barcode\": \"P8988000121\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 2,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P8988000123\"},\r\n        {\"barcode\": \"P8988000124\"},\r\n        {\"barcode\": \"P8988000125\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 3,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P9988000126\"},\r\n        {\"barcode\": \"P9988000127\"},\r\n        {\"barcode\": \"P9988000128\"},\r\n        {\"barcode\": \"P9988000129\"},\r\n        {\"barcode\": \"P9988000130\"}\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/getAllPacks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllPacks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getAllBags",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"plate\": \"34 TL 34\",\r\n  \"route\": [\r\n    {\r\n      \"deliveryPoint\": 1,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P7988000121\"},\r\n        {\"barcode\": \"P7988000122\"},\r\n        {\"barcode\": \"P7988000123\"},\r\n        {\"barcode\": \"P8988000121\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 2,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P8988000123\"},\r\n        {\"barcode\": \"P8988000124\"},\r\n        {\"barcode\": \"P8988000125\"},\r\n        {\"barcode\": \"C725799\"}\r\n      ]\r\n    },\r\n    {\r\n      \"deliveryPoint\": 3,\r\n      \"deliveries\": [\r\n        {\"barcode\": \"P9988000126\"},\r\n        {\"barcode\": \"P9988000127\"},\r\n        {\"barcode\": \"P9988000128\"},\r\n        {\"barcode\": \"P9988000129\"},\r\n        {\"barcode\": \"P9988000130\"}\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/getAllBags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllBags"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
