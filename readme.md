@@ -196,27 +196,3 @@ In the first step, you must update the status to **“loaded”** for all packag
 }
 ~~~~
 
-**You should be aware of the following conventions while you are working on this application:**
-
-- Publish a running project
-- Apply SOLID and OOP principles
-- Document your project for a developer
-- Handle exceptions for resilient web service
-- Test Driven Development is a good choice, but it's up to you how you are testing your code.
-- Nice to have: Dockerize your project
-
-You should commit to a local git repository and include the git repository (.git/) in the upload.
-
-NOTE: Please **DO NOT** publish the project on Github, Gitlab, etc. We will provide a private gitlab repository
-for you and we expect you to push your changes to that private repository or send your workspace folder
-as compressed.
-
-## Follow Us!
-
-[Trendyol Tech Medium](https://medium.com/trendyol-tech)
-
-[Trendyol Open Source GitHub](https://github.com/Trendyol)
-
-[Trendyol Tech Youtube](https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w)
-
-[Trendyol Tech Kommunity](https://kommunity.com/@trendyol)
